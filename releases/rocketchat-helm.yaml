@@ -1,0 +1,11 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: rocketchat-helm
+  namespace: rocketchat
+spec:
+  releaseName: rocketchat-helm
+  chart:
+    git: https://github.com/nzRegularIT/rocketchat-helm
+    ref: master
+    path: charts/rocketchat-helm
